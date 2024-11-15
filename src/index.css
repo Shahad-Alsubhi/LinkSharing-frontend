@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+body {
+   font-family: "Instrument Sans",sans-serif; 
+  /*line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87); */
+  background-color: #fafafa;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+.custom-scroll {
+  scrollbar-width: none;
+}
+.MuiMenuItem-root.Mui-selected{
+  color:#633CFF;
+  background-color: transparent !important;
+}
+.MuiButtonBase-root-MuiMenuItem-root{
+  color:#373737
+}
+
+.swal2-title {
+  font-size: 1.5rem !important;
+  font-family:"Instrument Sans",sans-serif; 
+}
