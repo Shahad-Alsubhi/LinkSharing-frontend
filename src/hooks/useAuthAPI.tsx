@@ -11,7 +11,7 @@ const useAuthAPI = () => {
   const useAuthMutation = (endpoint: string) =>
     useMutation<AxiosResponse, AxiosError<{ message: string }>, FieldValues>({
       mutationFn: async (formData) =>
-        await axiosInstance.post(`/users/${endpoint}`, formData),
+        await axiosInstance.post(`/auth/${endpoint}`, formData),
       onSuccess: (res) => {
         localStorage.setItem("user", res.data.token);
         const from = location.state?.from?.pathname || "/";
@@ -20,8 +20,8 @@ const useAuthAPI = () => {
     });
 
   return {
-    useLogin: useAuthMutation("/login"),
-    useSignup: useAuthMutation("/signup"),
+    useLogin: useAuthMutation("login"),
+    useSignup: useAuthMutation("signup"),
   };
 };
 

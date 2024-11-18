@@ -27,7 +27,7 @@ const Input = ({
 
   return (
     <div className={`mb-3 ${customStyle}`}>
-      <label htmlFor="name" className="text-sm text-[#333] block mb-1 md:w-1/2">
+      <label htmlFor={name} className="text-sm text-[#333] block mb-1 md:w-1/2">
         {lable}
       </label>
       <div className="relative w-full ">

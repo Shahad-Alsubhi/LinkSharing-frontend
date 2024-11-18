@@ -14,7 +14,7 @@ const useFetchUserById = (id:string) => {
   >({
     queryKey: ["userData"],
     queryFn: async () =>
-      await axiosInstance.get(`/users/user/${id}`, {
+      await axiosInstance.get(`/${id}`, {
       }),
     retry: 1,
   });

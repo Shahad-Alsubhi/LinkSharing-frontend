@@ -38,7 +38,7 @@ const Preview = () => {
           <CircularProgress color="primary" />
         </div>
       )}
-      <div className=" md:w-[330px] min-h-96 md:rounded-2xl md:shadow-lg pt-10 pb-4 md:bg-white z-20">
+      <div className=" md:w-[330px] min-h-[400px] md:rounded-2xl md:shadow-lg pt-10 pb-4 md:bg-white z-20">
         {userData && <UserInfoCard userData={userData} />}
       </div>
     </div>

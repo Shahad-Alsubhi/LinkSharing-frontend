@@ -20,7 +20,7 @@ const useProfileAPI = () => {
     FormData
   >({
     mutationFn: async (values) => {
-      return await axiosInstance.patch("users/profile-details", values, {
+      return await axiosInstance.patch("/profile", values, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${localStorage.getItem("user")}`,
@@ -38,7 +38,7 @@ const useProfileAPI = () => {
   const updateLinksMutation = useMutation<AxiosResponse, AxiosError, Link[]>({
     mutationFn: async (links) => {
       return await axiosInstance.patch(
-        "/users/links",
+        "/profile/links",
         { links },
         {
           headers: {
@@ -49,6 +49,7 @@ const useProfileAPI = () => {
     },
     onSuccess: () => {
       showSuccessMessage("Your changes have been successfully saved!");
+
     },
     onError: () => {
       toast.error("Something went wrong, Please try again later.");
@@ -86,6 +87,7 @@ const useProfileAPI = () => {
       }
     } else {
       updateProfileMutation.mutate(data);
+
     }
   };
 

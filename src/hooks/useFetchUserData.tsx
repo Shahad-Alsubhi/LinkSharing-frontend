@@ -15,7 +15,7 @@ const useFetchUserData = () => {
   >({
     queryKey: ["userData"],
     queryFn: async () =>
-      await axiosInstance.get("/users/user", {
+      await axiosInstance.get("/profile", {
         headers: { Authorization: "Bearer " + localStorage.getItem("user") },
       }),
     retry: 1,

@@ -12,6 +12,7 @@ const PhoneMockup = () => {
           src="/images/illustration-phone-mockup.svg"
           alt="phone-mockup"
           className="h-[582px]"
+          
         />
         <div className="absolute top-[60px] left-8">
           <UserInfoCard userData={user} />

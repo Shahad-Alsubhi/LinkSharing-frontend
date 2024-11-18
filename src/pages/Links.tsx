@@ -12,7 +12,7 @@ const Links = () => {
 
   return (
     <FormProvider {...methods}>
-      <div className="rounded-xl bg-white p-6 md:p-8 flex flex-col justify-around md:h-screen relative">
+      <div className="rounded-xl bg-white p-6 md:p-8 flex flex-col justify-around xl:h-screen relative">
         <div className="h-full md:overflow-scroll custom-scroll">
           <h1 className="text-2xl font-bold text-[#333333] mb-3">
             Customize your links

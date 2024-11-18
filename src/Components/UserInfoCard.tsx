@@ -12,7 +12,7 @@ const UserInfoCard = ({ userData }: { userData: user }) => {
         } `}
       >
         {pictureURL && (
-          <img src={`${pictureURL}`} className="object-fill rounded-full" />
+          <img src={`${pictureURL}`} className="object-fill rounded-full"  alt="profile-picture"/>
         )}
       </div>
       <h1

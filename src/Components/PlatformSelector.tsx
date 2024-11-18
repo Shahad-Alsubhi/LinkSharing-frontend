@@ -15,12 +15,12 @@ const PlatformSelector = ({
   return (
     <>
       <label
-        htmlFor="select-platform"
+        htmlFor={`platform-${id}`}
         className="text-sm text-[#333] block mb-1"
       >
         Platform
       </label>
-      <FormControl id="select-platform" className="w-full mb-4">
+      <FormControl id={`platform-${id}`} className="w-full mb-4">
         <Select
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}

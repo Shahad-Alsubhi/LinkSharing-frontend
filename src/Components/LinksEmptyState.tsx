@@ -4,6 +4,8 @@ const LinksEmptyState = () => {
       <img
         src="/images/illustration-empty.svg"
         className="w-32 mx-auto md:w-64"
+        alt="Illustration of an empty state"
+
       />
       <h1 className="text-2xl font-bold text-[#333333] my-6 text-center">
         Let’s get you started
