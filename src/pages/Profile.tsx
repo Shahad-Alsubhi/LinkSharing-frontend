@@ -9,7 +9,7 @@ const Profile = () => {
   const { handleUpdateProfile, updateProfileMutation } = useProfileAPI();
 
   return (
-    <div className="rounded-xl bg-white p-4 md:p-8 flex flex-col justify-around relative md:pb-6">
+    <div className="rounded-xl bg-white p-6 md:p-8 flex flex-col justify-around relative md:pb-6">
       <FormProvider {...methods}>
         <div className="h-full">
           <h1 className="text-2xl font-bold text-[#333333] mb-3">
