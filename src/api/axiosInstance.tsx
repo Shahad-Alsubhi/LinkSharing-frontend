@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   baseURL: 
-  `http://localhost:3000/users`,
+  `https://linksharing-backend.onrender.com/users`,
   headers: {
     'Content-Type': 'application/json',
     
