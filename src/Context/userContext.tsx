@@ -23,7 +23,7 @@ export const UserContext = createContext<UserContextType>({
   setUser: () => {},
 });
 
-const UserProfider = ({ children }: { children: React.ReactNode }) => {
+const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const [user, setUser] = useState<user>({
     firstName: "",
     lastName: "",
@@ -36,4 +36,4 @@ const UserProfider = ({ children }: { children: React.ReactNode }) => {
     </UserContext.Provider>
   );
 };
-export default UserProfider;
+export default UserProvider;

@@ -8,11 +8,14 @@ import toast from "react-hot-toast";
 import { promtLogin, showSuccessMessage } from "../utils/Alerts";
 import axiosInstance from "../api/axiosInstance";
 import { useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../Context/AuthContext";
 
 const useProfileAPI = () => {
   const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const { authToken } = useContext(AuthContext);
+
 
   const updateProfileMutation = useMutation<
     AxiosResponse,
@@ -23,7 +26,7 @@ const useProfileAPI = () => {
       return await axiosInstance.patch("/profile", values, {
         headers: {
           "Content-Type": "multipart/form-data",
-          Authorization: `Bearer ${localStorage.getItem("user")}`,
+          Authorization: `Bearer ${authToken}`,
         },
       });
     },
@@ -42,7 +45,7 @@ const useProfileAPI = () => {
         { links },
         {
           headers: {
-            Authorization: `Bearer ${localStorage.getItem("user")}`,
+            Authorization: `Bearer ${authToken}`,
           },
         }
       );

@@ -1,14 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 import { AxiosError, AxiosResponse } from "axios";
 import axiosInstance from "../api/axiosInstance";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import toast from "react-hot-toast";
 import { user } from "../Context/userContext";
+import { AuthContext } from "../Context/AuthContext";
 
 interface userData extends user {
   _id: string;
 }
 const useFetchUserData = () => {
+  const { authToken } = useContext(AuthContext);
+  
+
   const { data, isError, isLoading, isSuccess } = useQuery<
     AxiosResponse<{ userData: userData }>,
     AxiosError
@@ -16,7 +20,7 @@ const useFetchUserData = () => {
     queryKey: ["userData"],
     queryFn: async () =>
       await axiosInstance.get("/profile", {
-        headers: { Authorization: "Bearer " + localStorage.getItem("user") },
+        headers: { Authorization: `Bearer ${authToken}`},
       }),
     retry: 1,
   });
