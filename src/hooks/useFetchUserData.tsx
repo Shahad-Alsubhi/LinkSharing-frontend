@@ -4,7 +4,7 @@ import axiosInstance from "../api/axiosInstance";
 import { useContext, useEffect } from "react";
 import toast from "react-hot-toast";
 import { user } from "../Context/userContext";
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../Context/authContext";
 
 interface userData extends user {
   _id: string;

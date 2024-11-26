@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import { promtLogin, showSuccessMessage } from "../utils/Alerts";
 import axiosInstance from "../api/axiosInstance";
 import { useLocation, useNavigate } from "react-router-dom";
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../Context/authContext";
 
 const useProfileAPI = () => {
   const { user, setUser } = useContext(UserContext);

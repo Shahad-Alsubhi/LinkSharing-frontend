@@ -1,6 +1,6 @@
 import { ReactNode, useContext } from "react";
 import { Navigate, useLocation } from "react-router-dom";
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../Context/authContext";
 import { CircularProgress } from "@mui/material";
 
 const PrivateRoute = ({ children }: { children: ReactNode }) => {

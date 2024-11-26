@@ -4,7 +4,7 @@ import { FieldValues } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
 import axiosInstance from "../api/axiosInstance";
 import { useContext } from "react";
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../Context/authContext";
 
 const useAuthAPI = () => {
   const navigate = useNavigate();
