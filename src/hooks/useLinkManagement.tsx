@@ -43,7 +43,7 @@ const useLinkManagement = () => {
   };
 
   const handleCopy = (firstName:string,lastName:string,id:string) => {
-    navigator.clipboard.writeText(`localhost:5173/profile/${firstName}-${lastName}/${id}`);
+    navigator.clipboard.writeText(`link-sharing-project.vercel.app/profile/${firstName}-${lastName}/${id}`);
 
     successCopy();
   };
