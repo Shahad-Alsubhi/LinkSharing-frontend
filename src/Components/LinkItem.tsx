@@ -32,9 +32,10 @@ const LinkItem = ({
           {...listeners}
           src="/images/icon-drag-and-drop.svg"
           alt="icon-drag-and-drop"
-          className="inline mr-2 w-4"
+          className="inline mr-2 w-4 select-none"
+           draggable="false" 
         />
-        <h4 className="inline font-semibold text-[#737373]">Link#{place}</h4>
+        <h4 className="inline font-semibold text-[#737373] select-none">Link#{place}</h4>
         <button
           className="float-right text-base text-[#737373] "
           onClick={() => handleRemove(id)}
