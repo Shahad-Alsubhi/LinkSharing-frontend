@@ -21,7 +21,7 @@ const PlatformSelector = ({
         Platform
       </label>
       <FormControl id={`platform-${id}`} className="w-full mb-4">
-        <Select
+        <Select 
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}
           MenuProps={{
@@ -63,6 +63,10 @@ const PlatformSelector = ({
               gap: "12px",
               svg: { path: { fill: "#737373" } },
             },
+            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+              borderColor: "#633CFF", 
+            },
+         
           }}
         >
           {Array.from(platforms).map(([key, value]) => (

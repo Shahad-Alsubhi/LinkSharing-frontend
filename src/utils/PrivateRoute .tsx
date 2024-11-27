@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }: { children: ReactNode }) => {
 
   if (isLoading)
     return (
-      <div className=" absolute w-full h-full  bg-transparent/10 z-50 flex items-center justify-center">
+      <div className=" absolute w-full h-full  bg-transparent/5 z-50 flex items-center justify-center">
         <CircularProgress color="primary" />
       </div>
     );
