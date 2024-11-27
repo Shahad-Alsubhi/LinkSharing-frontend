@@ -1,4 +1,4 @@
-import { closestCorners, DndContext } from "@dnd-kit/core";
+import { closestCorners, DndContext, PointerSensor, TouchSensor, useSensor, useSensors } from "@dnd-kit/core";
 import {
   SortableContext,
   verticalListSortingStrategy,
@@ -8,9 +8,10 @@ import useLinkManagement from "../hooks/useLinkManagement";
 
 const LinksList = () => {
   const { handleSort, user } = useLinkManagement();
+  const sensors=useSensors(useSensor(PointerSensor),useSensor(TouchSensor))
 
   return (
-    <DndContext onDragEnd={handleSort} collisionDetection={closestCorners}>
+    <DndContext sensors={sensors} onDragEnd={handleSort} collisionDetection={closestCorners}>
       <SortableContext
         items={user.links}
         strategy={verticalListSortingStrategy}

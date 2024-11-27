@@ -1,6 +1,6 @@
 const LinksEmptyState = () => {
   return (
-    <div className="px-5 py-10 bg-[#FAFAFA] rounded-xl mb-6 md:mb-8">
+    <div className="px-5 py-10 bg-[#FAFAFA] rounded-xl mb-6 md:mb-14">
       <img
         src="/images/illustration-empty.svg"
         className="w-32 mx-auto md:w-64"

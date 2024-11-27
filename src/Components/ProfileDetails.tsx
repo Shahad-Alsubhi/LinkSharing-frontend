@@ -4,10 +4,9 @@ import { UserContext } from "../Context/userContext";
 
 const ProfileDetails = () => {
   const { user } = useContext(UserContext);
-  console.log(user);
 
   return (
-    <div className="p-5 rounded-lg bg-[#FAFAFA] mb-6">
+    <div className="p-5 rounded-lg bg-[#FAFAFA] mb-6 md:mb-14">
       <Input
         lable={"First name*"}
         placeholder={"e.g. John"}

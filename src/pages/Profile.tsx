@@ -9,7 +9,7 @@ const Profile = () => {
   const { handleUpdateProfile, updateProfileMutation } = useProfileAPI();
 
   return (
-    <div className="rounded-xl bg-white p-8 md:p-10 flex flex-col min-h-screen justify-around relative md:pb-6">
+    <div className="rounded-xl bg-white p-8 md:p-10 flex flex-col justify-around relative md:pb-6">
       <FormProvider {...methods}>
         <div className="h-full">
           <h1 className="text-2xl font-bold text-[#333333] mb-3">
@@ -22,7 +22,7 @@ const Profile = () => {
           <ProfileDetails />
         </div>
         <div>
-          <hr className=" text-[#D9D9D9] -mx-4 md:-mx-8 mb-6" />
+          <hr className=" text-[#D9D9D9] -mx-8 md:-mx-10 mb-6" />
           <Button
             onClick={methods.handleSubmit((data) => handleUpdateProfile(data))}
             type="submit"

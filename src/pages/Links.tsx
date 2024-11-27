@@ -12,7 +12,7 @@ const Links = () => {
 
   return (
     <FormProvider {...methods}>
-      <div className="rounded-xl bg-white p-8 md:p-10 flex flex-col justify-around xl:h-screen relative">
+      <div className="rounded-xl bg-white p-8 md:p-10 flex flex-col justify-around  xl:h-[780px] relative">
         <div className="h-full md:overflow-scroll custom-scroll">
           <h1 className="text-2xl font-bold text-[#333333] mb-3">
             Customize your links
@@ -31,7 +31,7 @@ const Links = () => {
           {user.links.length === 0 ? <LinksEmptyState /> : <LinksList />}
         </div>
         <div>
-          <hr className=" text-[#D9D9D9] -mx-6 md:-mx-8 mb-6" />
+          <hr className=" text-[#D9D9D9] -mx-8 md:-mx-10 mb-6" />
           <Button
             type="submit"
             onClick={methods.handleSubmit(() => {

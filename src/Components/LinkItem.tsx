@@ -24,7 +24,7 @@ const LinkItem = ({
     <div
       ref={setNodeRef}
       style={{ transition, transform: CSS.Transform.toString(transform) }}
-      className="p-5 rounded-lg bg-[#FAFAFA] mb-6 "
+      className="p-5 rounded-lg bg-[#FAFAFA] mb-6 touch-none"
     >
       <div className="overflow-hidden mb-3">
         <img

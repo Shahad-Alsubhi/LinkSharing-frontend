@@ -6,7 +6,7 @@ const PhoneMockup = () => {
   const { user } = useContext(UserContext);
 
   return (
-    <div className="max-xl:hidden bg-white rounded-xl flex justify-center items-center ">
+    <div className="max-xl:hidden bg-white rounded-xl flex justify-center items-center min-h-[780px]  ">
       <picture className="relative">
         <img
           src="/images/illustration-phone-mockup.svg"

@@ -6,7 +6,7 @@ const Header = () => {
   const [activeBtn, setActiveBtn] = useState("btn1");
   const navigate = useNavigate();
   return (
-    <header className="flex flex-row justify-between px-6 py-4 md:rounded-xl md:mx-6 md:my-6 bg-white">
+    <header className="flex flex-row justify-between px-6 py-4 md:rounded-xl md:mx-8 bg-white">
       <picture>
         <source
           media="(max-width:768px)"
