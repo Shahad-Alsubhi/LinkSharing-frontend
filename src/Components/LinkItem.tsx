@@ -27,15 +27,17 @@ const LinkItem = ({
       className="p-5 rounded-lg bg-[#FAFAFA] mb-6 touch-none"
     >
       <div className="overflow-hidden mb-3">
-        <img
-          {...attributes}
-          {...listeners}
-          src="/images/icon-drag-and-drop.svg"
-          alt="icon-drag-and-drop"
-          className="inline mr-2 w-4 select-none"
-           draggable="false" 
-        />
-        <h4 className="inline font-semibold text-[#737373] select-none">Link#{place}</h4>
+        <span {...attributes} {...listeners}>
+          <img
+            src="/images/icon-drag-and-drop.svg"
+            alt="icon-drag-and-drop"
+            className="inline mr-2 w-4 select-none"
+            draggable="false"
+          />
+          <h4 className="inline font-semibold text-[#737373] select-none">
+            Link#{place}
+          </h4>
+        </span>
         <button
           className="float-right text-base text-[#737373] "
           onClick={() => handleRemove(id)}
