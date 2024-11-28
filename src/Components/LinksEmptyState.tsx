@@ -1,12 +1,11 @@
 const LinksEmptyState = () => {
   return (
     <div className="px-5 py-10 bg-[#FAFAFA] rounded-xl mb-6 md:mb-14">
-      <img
+       <img
         src="/images/illustration-empty.svg"
-        className="w-32 mx-auto md:w-64"
+        className="w-32 mx-auto md:w-64 md:h-[165px]"
         alt="Illustration of an empty state"
-
-      />
+      /> 
       <h1 className="text-2xl font-bold text-[#333333] my-6 text-center">
         Let’s get you started
       </h1>

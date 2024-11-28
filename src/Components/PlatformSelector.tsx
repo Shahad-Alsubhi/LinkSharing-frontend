@@ -37,7 +37,8 @@ const PlatformSelector = ({
           IconComponent={() => (
             <img
               src="/images/icon-chevron-down.svg"
-              className={`${isOpen && "rotate-180 "}`}
+              alt="chevron icon"
+              className={`${isOpen && "rotate-180 "} w-3 h-2`}
             />
           )}
           value={platform}

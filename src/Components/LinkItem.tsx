@@ -31,7 +31,7 @@ const LinkItem = ({
           <img
             src="/images/icon-drag-and-drop.svg"
             alt="icon-drag-and-drop"
-            className="inline mr-2 w-4 select-none"
+            className="inline mr-2 w-4 h-2 select-none"
             draggable="false"
             onTouchStart={(e) => e.preventDefault()}
           />

@@ -17,11 +17,11 @@ const Header = () => {
           srcSet="/images/logo-devlinks-large.svg"
           width={146}
         />
-        <img src="/images/logo-devlinks-small.svg" alt="logo" />
+        <img src="/images/logo-devlinks-small.svg" alt="logo" width={32} height={32}/>
       </picture>
 
       <nav className="flex">
-        <button
+        <button name="Links"
           className={`py-2 px-6 rounded-lg flex gap-2 items-center md:ml-5 hover:text-[#633CFF] ${
             activeBtn === "btn1"
               ? "text-[#633CFF] bg-[#EFEBFF]"
@@ -49,6 +49,7 @@ const Header = () => {
           </span>
         </button>
         <button
+        name="Profile Details"
           className={`group py-2 px-6 rounded-lg flex gap-2  items-center hover:text-[#633CFF] ${
             activeBtn === "btn2"
               ? "text-[#633CFF] bg-[#EFEBFF]"
@@ -81,7 +82,7 @@ const Header = () => {
         <img
           src="/images/icon-preview-header.svg"
           alt="icon-preview"
-          className="md:hidden"
+          className="md:hidden w-5 h-5"
         />
         <span className="max-md:hidden">Preview</span>
       </Button>
