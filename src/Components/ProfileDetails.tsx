@@ -14,10 +14,10 @@ const ProfileDetails = () => {
         defaultValue={user.firstName}
         validation={{ required: "Can’t be empty" }}
         customStyle="md:flex md:justify-between md:items-center"
-        name={"firstName"}
+        id={"firstName"}
       />
       <Input
-        name="lastName"
+        id="lastName"
         lable={"Last name*"}
         placeholder={"e.g. Appleseed"}
         type={"text"}
@@ -26,7 +26,7 @@ const ProfileDetails = () => {
         customStyle="md:flex md:justify-between md:items-center"
       />
       <Input
-        name="visibleEmail"
+        id="visibleEmail"
         lable={"Email"}
         placeholder={"e.g. email@example.com"}
         type={"email"}
