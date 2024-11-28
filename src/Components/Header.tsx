@@ -9,17 +9,12 @@ const Header = () => {
     <header className="flex flex-row justify-between px-6 py-4 md:rounded-xl md:mx-8 bg-white">
       <picture>
         <source
-          media="(max-width:768px)"
-          srcSet="/images/logo-devlinks-small.svg"
-          width={32}
-          height={32}
-        />
-        <source
           media="(min-width:769px)"
           srcSet="/images/logo-devlinks-large.svg"
           width={146}
           height={32}
         />
+        
         <img
           src="/images/logo-devlinks-small.svg"
           alt="logo"
