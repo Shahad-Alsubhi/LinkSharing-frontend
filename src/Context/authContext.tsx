@@ -31,8 +31,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
           }
           seIsLoading(false);
         })
-        .catch((e) => {
-          console.log(e);
+        .catch(() => {
           seIsLoading(false);
         });
     }

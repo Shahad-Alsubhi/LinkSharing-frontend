@@ -17,7 +17,7 @@ const Links = () => {
           <h1 className="text-2xl font-bold text-[#333333] mb-3">
             Customize your links
           </h1>
-          <p className="text-[#737373] text-base">
+          <p className="text-[#737373]">
             Add/edit/remove links below and then share all your profiles with
             the world!
           </p>

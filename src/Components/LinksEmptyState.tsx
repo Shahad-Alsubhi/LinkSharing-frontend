@@ -9,7 +9,7 @@ const LinksEmptyState = () => {
       <h1 className="text-2xl font-bold text-[#333333] my-6 text-center">
         Let’s get you started
       </h1>
-      <p className="text-[#737373] text-base text-center max-w-[488px] mx-auto">
+      <p className="text-[#737373] text-center max-w-[488px] mx-auto">
         Use the “Add new link” button to get started. Once you have more than
         one link, you can reorder and edit them. We’re here to help you share
         your profiles with everyone!

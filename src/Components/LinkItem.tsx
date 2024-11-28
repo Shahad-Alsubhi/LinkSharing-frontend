@@ -28,13 +28,17 @@ const LinkItem = ({
     >
       <div className="overflow-hidden mb-3 -m-5">
         <span {...attributes} {...listeners} className="inline-block p-5 pb-2 ">
-          <img
-            src="/images/icon-drag-and-drop.svg"
-            alt="icon-drag-and-drop"
-            className="inline mr-2 w-4 h-2 select-none"
-            draggable="false"
-            onTouchStart={(e) => e.preventDefault()}
-          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="8"
+            className="select-none inline mr-2"
+            fill="none"
+            viewBox="0 0 12 6"
+          >
+            <path fill="#737373" d="M0 0h12v1H0zM0 5h12v1H0z" />
+          </svg>
+
           <h4 className="inline-block font-semibold text-[#737373] select-none">
             Link#{place}
           </h4>

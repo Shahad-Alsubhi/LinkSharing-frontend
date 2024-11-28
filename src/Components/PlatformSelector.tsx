@@ -21,7 +21,7 @@ const PlatformSelector = ({
         Platform
       </label>
       <FormControl id={`platform-${id}`} className="w-full mb-4">
-        <Select 
+        <Select
           onOpen={() => setIsOpen(true)}
           onClose={() => setIsOpen(false)}
           MenuProps={{
@@ -35,11 +35,16 @@ const PlatformSelector = ({
             },
           }}
           IconComponent={() => (
-            <img
-              src="/images/icon-chevron-down.svg"
-              alt="chevron icon"
-              className={`${isOpen && "rotate-180 "} w-3 h-2`}
-            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              className={`${isOpen && "rotate-180 "} `}
+              height="9"
+              fill="none"
+              viewBox="0 0 14 9"
+            >
+              <path stroke="#633CFF" stroke-width="2" d="m1 1 6 6 6-6" />
+            </svg>
           )}
           value={platform}
           onChange={(e) => handlePlatformChange(e, id)}
@@ -65,9 +70,8 @@ const PlatformSelector = ({
               svg: { path: { fill: "#737373" } },
             },
             "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              borderColor: "#633CFF", 
+              borderColor: "#633CFF",
             },
-         
           }}
         >
           {Array.from(platforms).map(([key, value]) => (
