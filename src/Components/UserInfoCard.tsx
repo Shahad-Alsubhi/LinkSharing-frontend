@@ -8,12 +8,11 @@ const UserInfoCard = ({ userData }: { userData: user }) => {
     <>
       <div
         className={`w-[5.5rem] h-[5.5rem] rounded-full mb-3 mx-auto bg-cover  ${
-          pictureURL && "border-[3px] border-[#633CFF]"
+          pictureURL && "border-[3px] border-[#633CFF] bg-cover "
         } `}
+        style={{backgroundImage:pictureURL ? `url(${pictureURL})`:""}}
       >
-        {pictureURL && (
-          <img src={`${pictureURL}`} className="object-fill rounded-full"  alt="profile-picture"/>
-        )}
+       
       </div>
       <h1
         className={`text-center min-h-7 text-[#333333] text-lg font-semibold ${

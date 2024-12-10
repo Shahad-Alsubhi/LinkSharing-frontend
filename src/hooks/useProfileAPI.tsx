@@ -66,7 +66,7 @@ const useProfileAPI = () => {
     const newUser = { ...user, links: updatedLinks };
     setUser(newUser);
 
-    if (!localStorage.getItem("user")) {
+    if (!authToken) {
       const result = await promtLogin();
       if (result) {
         navigate("/login", { replace: true, state: { from: location } });
@@ -83,12 +83,13 @@ const useProfileAPI = () => {
     data.append("visibleEmail", values.visibleEmail);
     data.append("picture", values.picture[0]);
     setUser({ ...user, ...values, picture: values.picture[0] });
-    if (!localStorage.getItem("user")) {
+    if (!authToken) {
       const result = await promtLogin();
       if (result) {
         navigate("/login", { replace: true, state: { from: location } });
       }
     } else {
+      
       updateProfileMutation.mutate(data);
 
     }
