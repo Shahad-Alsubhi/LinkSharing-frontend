@@ -14,7 +14,7 @@ const PublicProfile = () => {
         <div className="flex flex-col relative max-md:bg-white min-h-screen pb-28 pt-16 items-center md:pt-44 before:absolute before:left-0 before:top-0 before:w-full before:h-[330px] before:rounded-b-3xl before:-z-[1]  before:bg-[#633CFF] ">
 
           {isLoading && (
-            <div className=" absolute w-full h-full bg-slate-300/30 z-50 flex items-center justify-center">
+            <div className="absolute w-full h-full top-0 left-0 bg-transparent/5 z-50 flex items-center justify-center">
               <CircularProgress color="primary" />
             </div>
           )}
